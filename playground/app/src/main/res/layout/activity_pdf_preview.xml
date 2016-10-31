@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingRight="0dp"
+        tools:context="org.yuntu.app.extend.activity.PDFPreviewActivity">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:background="#fa642f">
+        <ImageView
+            android:id="@+id/button_backward"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:onClick="onClick"
+            android:padding="6dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/arrow_left"
+            />
+
+        <TextView
+            android:id="@+id/title_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="美美与共34343dfdfdfdf"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <ProgressBar android:id="@+id/pdf_progressBar" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerInParent="true"
+        android:visibility="visible"/>
+</RelativeLayout>
